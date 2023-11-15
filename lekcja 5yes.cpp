@@ -1,20 +1,23 @@
-	#include<iostream>
-	using namespace std;
+#include <iostream>
+using namespace std;
+
+int main(){
+	int wysokosc, szerokosc;
+	cout << "Podaj szerokosc: ";
+	cin >> szerokosc;
+	cout << " Podaj wysokosc: ";
+	cin >> wysokosc;
 	
-	int main (){
-		
-	for(int i=0; i < 10; i++){
-        for(int j=0; j < 10; j++){
-        	cout<< i << " * " << " = " << i*j <<endl;
-        }
-        cout << endl;
-    }
-		
-		
-		
-		cout <<endl;
-		system("pause");
-		
-		
-		
-	}
+   for(int i=0; i < wysokosc; i++){
+       for(int j=0; j < szerokosc; j++){
+        if (i == 0 || i == wysokosc-1)
+		   cout << "*";
+		   else if(j == 0 || j == szerokosc-1)
+		   	cout << "*";
+		   else
+		   	cout << " ";
+		   
+       }
+       cout << endl;
+   }
+}
